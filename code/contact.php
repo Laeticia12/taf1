@@ -1,10 +1,10 @@
 <?php{
 $_servername="localhost";
-$_usename='root';
+$_username='root';
 $_password='';
 $_dbname='utilisateur';
 try{
-    $con = new PDO("mysql:host=".$_servername.";dbname=;".$_utilisateur,$_username,$_password);
+    $con = new PDO("mysql:host=".$_servername.";dbname=".$_dbname.";",$_username,$_password);
 }
 catch(PDOExeption $e){
     die("erreur: ".$e->getMessage());
